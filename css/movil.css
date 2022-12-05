@@ -1,12 +1,82 @@
-@media screen and (max-width: 390px){
-    header{
-        padding-bottom: 40px;
+@media screen and (max-width: 390px) {
+    :root {
+        --aguamarina: rgba(99, 216, 170, 1);
+        --azul-claro: rgba(111, 188, 255, 1);
+        --azul-fuerte: rgba(11, 97, 131, 1);
+        --aguamarina-fuerte: rgba(57, 189, 167, 1);
+        --blanco: #FFF;
+        --negro: #000;
     }
-    .horario{
-        font-size: 10px;
+
+    body{
+        max-width: 390px;
     }
-    .callus{
-        display: inline-flex;
+
+    #subir {
+        font-size: 30px;
+        position: fixed;
+        z-index: 30;
+        bottom: 80px;
+        left: 330px;
+    }
+
+    header {
+       padding: 40px 20px;
+    }
+
+    .horario {
         font-size: 10px;
+        margin-top: -15px;
+    }
+
+    .callus {
+        display: flex;
+        font-size: 10px;
+        margin-top: -1px;
+    }
+
+    #menu {
+        display: flex;
+        margin-left: 50%;
+        margin-top: 5px;
+        font-size: 40px;
+        color: var(--aguamarina);
+    }
+
+    nav {
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        background-color: var(--aguamarina);
+        z-index: 5;
+        top: 100%;
+        left: -100%;
+        width: 70%;
+        position: absolute;
+        overflow: hidden;
+        transition: all 0.5s;
+        color: var(--negro);
+    }
+
+    nav ul.abrirmenu {
+        left: 0px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        border-left: none;
+        border-right: none;
+        z-index: 10;
     }
 }
