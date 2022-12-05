@@ -7,17 +7,101 @@
     <title>Página Principal</title>
     <link rel='stylesheet' href='css/estilo.css'>
     <link rel='stylesheet' href='css/movil.css'>
+    <link rel='stylesheet' href='css/tinycarousel.css'>
+    <link rel='stylesheet' href='css/slidefotos.css'>
+    <script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
     <script src="js/wow.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+          $("#slider4").responsiveSlides({
+            auto: false,
+            pager: false,
+            nav: true,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+              $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+              $('.events').append("<li>after event fired.</li>");
+            }
+          });
+        });
+    </script>
 </head>
 <body>
+    <script>
+        new WOW().init();
+    </script>
+    <i id="subir" class="fa-solid fa-chevron-up"></i>
     <header>
         <p class="horario">Working Hours: 08:00 AM - 10:00 PM (Mon-Sat)</p>
         <p class="callus">Call Us: <a href="tel:3111234567" class="btn_tel"> 311-123-4567</a><a href="#" class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i></a></p>
     </header>
     <nav>
-        
+        <figure>
+            <img src="img/Logo.svg" alt="">
+        </figure>
+        <div id="menu">
+            <i class="fas fa-bars fa-1x"></i>
+        </div>
+        <ul id="contenedormenu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#" class="btn_cotizar">Cotizaciones</a></li>
+        </ul>
     </nav>
+    <section class="responsiveSlide">
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+                <li>
+                    <img src="img/responsive1.png" alt="">
+                    <p class="caption"><b>Desinfección de Alto Nivel</b> <br> Nebulización Multifuncional de Amplio Espectro</p>
+                </li>
+                <li>
+                    <img src="img/responsive2.jpeg" alt="">
+                    <p class="caption"><b>LIMPIEZA SIN LIMITES</b> <br> Servicios de Limpieza Profesional</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <figure>
+                <img src="img/Logo.svg" alt="">
+            </figure>
+            <p class="derechos">
+                DERECHOS RESERVADOS ® kleenr
+                <br><br>
+                Prohibida la reproducción total o parcial de cualquier parte de esta obra sin la autorización previa, expresa y por escrito de su titular.</p>
+        </div>
+        <div class="contactar">
+            <h1>Contactanos</h1>
+            <i class="fa-solid fa-location-dot icono1"></i>
+            <p class="direccion">
+                3261 Anmoore Road Brooklyn, NY 11230
+            </p>
+            <i class="fa-solid fa-phone icono2"></i>
+            <p class="telefono">
+                800-123-4567, Fax: 718-724-3312
+            </p>
+        </div>
+        <div class="mas_info">
+            <h1>Más información</h1>
+            <i class="fa-solid fa-clock reloj"></i>
+            <p class="horario">
+                L-V: 9:00 Am – 5:00 Pm <br>
+                S-D: 11:00 Am – 16:00 Pm
+            </p>
+            <p>
+                <a href="#" class="btn_correo">
+                    Officeone@Youremail.Com</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
