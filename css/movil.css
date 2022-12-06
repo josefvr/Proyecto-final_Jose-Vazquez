@@ -92,10 +92,15 @@
         flex-direction: row;
         height: auto;
         text-align: center;
+        padding-left: 40px;
     }
 
     .info_logo{
         margin-bottom: 30px;
+    }
+
+    .derechos{
+        text-align: center;
     }
 
     .direccion{
