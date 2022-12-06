@@ -1,4 +1,4 @@
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 480px) {
     :root {
         --aguamarina: rgba(99, 216, 170, 1);
         --azul-claro: rgba(111, 188, 255, 1);
@@ -9,24 +9,25 @@
     }
 
     body{
-        max-width: 390px;
+        max-width: 480px;
     }
 
     #subir {
         font-size: 30px;
         position: fixed;
         z-index: 30;
-        bottom: 80px;
-        left: 330px;
+        bottom: 50px;
+        left: 300px;
     }
 
     header {
-       padding: 40px 20px;
+       padding: 30px 20px;
     }
 
     .horario {
         font-size: 10px;
         margin-top: -15px;
+        margin-left: -5px;
     }
 
     .callus {
@@ -46,6 +47,10 @@
     nav {
         padding: 10px 20px;
         position: relative;
+    }
+
+    nav figure{
+        margin-top: 10px;
     }
 
     nav ul {
@@ -78,5 +83,34 @@
         border-left: none;
         border-right: none;
         z-index: 10;
+    }
+
+    footer{
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .info_logo{
+        margin-bottom: 30px;
+    }
+
+    .direccion{
+        margin-bottom: 20px;
+    }
+
+    .telefono{
+        margin-right: 10px;
+        margin-bottom: 30px;
+        width: 250px;
+        text-align: center;
+        margin-top: -2px;
+    }
+
+    .mas_info h1{
+        margin-top: 30px;
     }
 }
