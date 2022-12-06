@@ -1,42 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Servicios</title>
     <link rel='stylesheet' href='css/estilo.css'>
     <link rel='stylesheet' href='css/movil.css'>
     <link rel='stylesheet' href='css/tinycarousel.css'>
-    <link rel='stylesheet' href='css/slidefotos.css'>
     <script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
-        $(function () {
-            $("#slider4").responsiveSlides({
-                auto: false,
-                pager: false,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                before: function () {
-                    $('.events').append("<li>before event fired.</li>");
-                },
-                after: function () {
-                    $('.events').append("<li>after event fired.</li>");
-                }
-            });
-        });
-    </script>
 </head>
-
 <body>
-    <script>
-        new WOW().init();
-    </script>
     <i id="subir" class="fa-solid fa-chevron-up"></i>
     <header>
         <p class="horario">Working Hours: 08:00 AM - 10:00 PM (Mon-Sat)</p>
@@ -61,24 +37,6 @@
         <a href="contacto.html">Contacto</a>
         <a href="#" class="btn_cotizar">Cotizaciones</a>
     </nav>
-    <section>
-        <div class="callbacks_container">
-            <ul class="rslides" id="slider4">
-                <li>
-                    <img src="img/responsive1.png" alt="">
-                    <p class="caption"><b>Desinfección de Alto Nivel</b> <br> Nebulización Multifuncional de Amplio
-                        Espectro</p>
-                </li>
-                <li>
-                    <img src="img/responsive2.jpeg" alt="">
-                    <p class="caption"><b>LIMPIEZA SIN LIMITES</b> <br> Servicios de Limpieza Profesional</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section>
-
-    </section>
     <footer>
         <div class="info_logo">
             <figure>

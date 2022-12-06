@@ -8,7 +8,7 @@
         --negro: #000;
     }
 
-    body{
+    body {
         max-width: 480px;
     }
 
@@ -21,7 +21,7 @@
     }
 
     header {
-       padding: 30px 20px;
+        padding: 30px 20px;
     }
 
     .horario {
@@ -36,56 +36,47 @@
         margin-top: -1px;
     }
 
-    #menu {
+    .contenedor_menu {
+        display: block;
+    }
+
+    #iconomenu {
         display: flex;
-        margin-left: 50%;
-        margin-top: 5px;
-        font-size: 40px;
-        color: var(--aguamarina);
-    }
-
-    nav {
-        padding: 10px 20px;
-        position: relative;
-    }
-
-    nav figure{
         margin-top: 10px;
     }
 
-    nav ul {
+    .logo_f{
+        display: flex;
+        margin-top: -60px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    nav {
+        display: none;
+        padding: 10px;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
-        flex-wrap: wrap;
-        padding: 0px 10px;
-        background-color: var(--aguamarina);
-        z-index: 5;
-        top: 100%;
-        left: -100%;
-        width: 70%;
-        position: absolute;
-        overflow: hidden;
-        transition: all 0.5s;
-        color: var(--negro);
     }
 
-    nav ul.abrirmenu {
-        left: 0px;
+    nav figure{
+        display: none;
     }
 
-    nav ul li {
+    nav a {
         width: 100%;
-    }
-
-    nav ul li a {
         display: block;
-        border-left: none;
-        border-right: none;
-        z-index: 10;
+        border-radius: 0px;
+        border: 0px;
+        border-bottom: 1px var(--aguamarina) solid;
     }
 
-    footer{
+    .btn_cotizar {
+        display: none;
+    }
+
+    footer {
         display: block;
         justify-content: space-evenly;
         align-items: center;
@@ -95,19 +86,19 @@
         padding-left: 40px;
     }
 
-    .info_logo{
+    .info_logo {
         margin-bottom: 30px;
     }
 
-    .derechos{
+    .derechos {
         text-align: center;
     }
 
-    .direccion{
+    .direccion {
         margin-bottom: 20px;
     }
 
-    .telefono{
+    .telefono {
         margin-right: 10px;
         margin-bottom: 30px;
         width: 250px;
@@ -115,7 +106,7 @@
         margin-top: -2px;
     }
 
-    .mas_info h1{
+    .mas_info h1 {
         margin-top: 30px;
     }
 }

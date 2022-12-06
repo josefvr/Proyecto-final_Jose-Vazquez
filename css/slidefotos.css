@@ -81,15 +81,18 @@
   position: absolute;
   top: 50%;
   left: 0;
-  opacity: 0.5;
-  z-index: 5;
+  opacity: 0.4;
+  z-index: 90;
   text-indent: -9999px;
   overflow: hidden;
   text-decoration: none;
   height: 50px;
   width: 50px;
   background: transparent url("img/flechas.png") no-repeat left top;
+  border: 2px var(--azul-fuerte) solid;
   margin-top: -45px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .callbacks_nav.next {
@@ -104,11 +107,11 @@
   line-height: 0;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
 
   .caption {
     font-size: 15px;
-    width: 80%;
+    width: 60%;
     letter-spacing: 3px;
   }
 
