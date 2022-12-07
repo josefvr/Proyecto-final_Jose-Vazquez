@@ -35,7 +35,7 @@
         <a href="servicios.html">Servicios</a>
         <a href="acerca-de.html">Acerca de</a>
         <a href="contacto.html">Contacto</a>
-        <a href="#" class="btn_cotizar">Cotizaciones</a>
+        <a href="#" class="btn_cotizar" id="cotizar">Cotizaciones</a>
     </nav>
     <footer>
         <div class="info_logo">
@@ -65,7 +65,7 @@
             <i class="fa-solid fa-clock reloj"></i>
             <p class="horario1">
                 L-V: 9:00 am – 5:00 pm <br>
-                S-D: 11:00 am – 16:00 pm
+                S-D: 11:00 am – 4:00 pm
             </p>
             <i class="fa-solid fa-envelope correo"></i>
             <p class="correo_btn">
@@ -75,6 +75,66 @@
             </p>
         </div>
     </footer>
+    <section id="formulario" class="fondomodal">
+        <div class="contenidomodal">
+            <div class="estructuramodal">
+                <i id="cerrarbtn" class="cerrar modal fas fa-times-circle wow animate__animated animate__rotateIn"></i>
+            </div>
+            <figure>
+                <img src="img/coca-cola-navidad.jpg" alt="">
+            </figure>
+        </div>
+    </section>
+    <script>
+        var fondomodal = document.getElementById("formulario");
+        var btn_cotizar = document.getElementById("cotizar");
+        var cerrar = document.getElementById("cerrarbtn");
+
+        function tiempo(){
+            fondomodal.style.display = "block";
+        }
+        // setTimeout(tiempo, 2000);
+
+        btn_cotizar.onclick = function (){
+            fondomodal.style.display = "block";
+        };
+        cerrar.onclick = function (){
+            fondomodal.style.display = "none";
+        };
+        window.onclick = function (event){
+            if(event.target == fondomodal){
+                fondomodal.style.display = "none";
+            }
+        };
+    </script>
+    <section id="modal" class="fondomodal">
+        <div class="contenidomodal">
+            <div class="estructuramodal">
+                <i id="cerrarbtn" class="cerrar modal fas fa-times-circle"></i>
+            </div>
+            <figure>
+                <img src="img/coca-cola-navidad.jpg" alt="">
+            </figure>
+        </div>
+    </section>
+    <script>
+        var fondomodal = document.getElementById("modal");
+        var cerrar = document.getElementById("cerrarbtn");
+
+        function tiempo(){
+            fondomodal.style.display = "block";
+        }
+        setTimeout(tiempo, 5000);
+
+        cerrar.onclick = function (){
+            fondomodal.style.display = "block";
+        };
+        window.onclick = function (event){
+            if(event.target == fondomodal){
+                fondomodal.style.display = "none";
+            }
+        };
+    </script>
     <script>
         $("#iconomenu").click(function () {
             $("nav").slideToggle();

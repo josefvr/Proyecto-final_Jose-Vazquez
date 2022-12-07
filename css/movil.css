@@ -53,7 +53,7 @@
     }
 
     nav {
-        display: none;
+        display: block;
         padding: 10px;
         flex-direction: column;
         justify-content: center;
