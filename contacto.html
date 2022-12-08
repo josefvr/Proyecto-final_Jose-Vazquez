@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
     <link rel='stylesheet' href='css/estilo.css'>
-    <link rel='stylesheet' href='css/movil.css'>
     <link rel='stylesheet' href='css/tinycarousel.css'>
     <script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
     <script src="js/wow.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/funciones.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <i id="subir" class="fa-solid fa-chevron-up"></i>
@@ -38,6 +41,61 @@
         <a href="contacto.html">Contacto</a>
         <a href="#" class="btn_cotizar" id="cotizar">Cotizaciones</a>
     </nav>
+    <section class="contacto_titulo">
+        <h1>Contacto</h1>
+    </section>
+    <section class="contacto">
+        <div class="fondo">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-0.27,24.17 C130.07,7.41 250.27,56.73 501.41,17.27 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #E9F6FF;">
+                </path>
+            </svg>
+            <h1 class="title_contacto">Contactanos</h1>
+            <h2 class="title2">Let's Get In Touch</h2>
+        </div>
+        <form action="" method="get">
+            <input type="text" id="name" name="user_name" placeholder="Escriba su nombre">
+            <input type="email" id="email" name="email" placeholder="Escriba su correo">
+            <input type="number" id="numero" name="number" placeholder="Escriba su número de teléfono">
+            <textarea id="comentario" name="comments" placeholder="Escriba su comentario"></textarea>
+            <p>
+                <input type="submit" value="Enviar" id="btn_enviar">
+            </p>
+        </form>
+        <br><br><br>
+        <div class="datos">
+            <article>
+                <a href="#">
+                    178 Broadway Brooklyn, NY
+                </a>
+                <br><br>
+                <p>
+                    Address :
+                </p>
+            </article>
+            <article>
+                <a href="tel:3111234567">
+                    311-123-4567
+                </a>
+                <br><br>
+                <p>
+                    Phone :
+                </p>
+            </article>
+            <article>
+                <a href="mailto:Officeone@youremail.com">
+                    Officeone@youremail.com
+                </a>
+                <br><br>
+                <p>
+                    Email :
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12253.3451520285!2d-75.75680939218749!3d39.8442962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa4a59345735b0673%3A0x42ef9233c2013809!2sKleenr!5e0!3m2!1ses!2smx!4v1670461664650!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
     <footer>
         <div class="info_logo">
             <figure>

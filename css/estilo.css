@@ -14,12 +14,21 @@
 }
 
 body {
-    font-family: quicksand, Sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #333;
     max-width: 1200px;
     margin: auto;
+}
+
+h1, h2{
+    font-family: 'Roboto';
+}
+
+p, input, textarea, a{
+    font-family: 'Open Sans', sans-serif;
 }
 
 #subir {
@@ -76,15 +85,11 @@ nav {
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
-    /* position: fixed;
-    left: 0;
-	top: 0;
-    height: auto; */
 }
 
 nav figure {
     width: 30%;
-    margin-left: -70px;
+    margin-left: 15px;
 }
 
 #menu {
@@ -203,7 +208,7 @@ nav a:hover {
 
 .caption {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     text-align: center;
     font-size: 20px;
     text-shadow: 0px 0px 10px #333;
@@ -232,6 +237,7 @@ nav a:hover {
     margin-top: -45px;
     margin-left: 10px;
     margin-right: 10px;
+    color: var(--aguamarina-fuerte);
 }
 
 .callbacks_nav.next {
@@ -340,11 +346,11 @@ footer {
     width: 90%;
 }
 
-figure img {
+.contenidomodal figure img {
     width: 40%;
 }
 
-figure {
+.contenidomodal figure {
     text-align: center;
 }
 
@@ -364,6 +370,164 @@ figure {
 .cerrar {
     float: right;
     font-size: 40px;
+}
+
+.video {
+    text-align: center;
+}
+
+.video h1 {
+    font-size: 50px;
+    margin: 30px;
+}
+
+#contenedorvideo {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+#contenedorvideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contacto_titulo{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+
+.contacto{
+    margin-top: -5%;
+    margin-bottom: 120px;
+}
+
+.contacto .title_contacto{
+    position: absolute;
+    top: 53%;
+    left: calc(50% - 70px);
+    font-size: 20px;
+    color: var(--aguamarina-fuerte);
+}
+
+.contacto .title2{
+    position: absolute;
+    top: 60%;
+    left: calc(50% - 170px);
+    font-size: 40px;
+    color: var(--azul-fuerte);
+}
+
+.fondo{
+    height: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contacto form{
+    font-size: 40px;
+    width: 70%;
+    background: transparent;
+    margin-left: calc(50% - 120px);
+    margin-top: -460px;
+}
+
+.contacto form input{
+    border: 1px var(--aguamarina) solid;
+    margin: 10px 15px;
+    background-color: transparent;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#name{
+    width: 48%;
+    margin-left: -290px;
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+#email{
+    width: 48%;
+    margin-left: -8px;
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+#numero{
+    width: 97.5%;
+    margin-left: -290px;
+    padding: 25px 20px;
+}
+
+#comentario{
+    width: 97.5%;
+    height: 120px;
+    margin-left: -290px;
+    padding: 25px 20px;
+    background-color: transparent;
+    border: 1px var(--aguamarina) solid;
+    margin-top: 10px;
+}
+
+.contacto form p{
+    text-align: center;
+    margin-left: -70%;
+    margin-top: 10px;
+}
+
+#btn_enviar{
+    background: linear-gradient(90deg, var(--aguamarina) 0%, var(--aguamarina-fuerte) 100%);
+    margin-top: 25px;
+    padding: 15px 30px 35px;
+    font-size: 15px;
+    transition: 0.5s all;
+    font-weight: 600;
+}
+
+#btn_enviar:hover{
+    background: linear-gradient(90deg, var(--aguamarina-fuerte) 0%, var(--aguamarina) 100%);
+    font-weight: 100;
+    color: var(--blanco);
+}
+
+.datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(233,246,255,1) 100%);
+    margin: auto;
+}
+
+.datos article{
+    background-color: var(--blanco);
+    text-align: center;
+    color: var(--negro);
+    padding: 30px 40px;
+    width: 25%;
+    height: 100%;
+}
+
+.datos article a{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.datos article p{
+    font-weight: 900;
+}
+
+.mapa iframe {
+    width: 100%;
+    margin: auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -480,5 +644,99 @@ figure {
 
     .mas_info h1 {
         margin-top: 30px;
+    }
+
+    .video h1 {
+        text-align: center;
+        line-height: 1;
+        font-size: 30px;
+    }
+
+    .video div iframe {
+        width: 280px;
+        height: 200px;
+    }
+
+    .mapa iframe {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contacto form{
+        margin-top: -440px;
+    }
+
+    .contacto form input{
+        border: 1px var(--aguamarina) solid;
+        margin: 10px 15px;
+        background-color: transparent;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #name{
+        margin: auto;
+        padding: 25px 20px;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #email{
+        width: 90%;
+        margin: auto;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+
+    #numero{
+        padding: 25px 20px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #comentario{
+        height: 120px;
+        padding: 25px 20px;
+        background-color: transparent;
+        border: 1px var(--aguamarina) solid;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .contacto form p{
+        text-align: center;
+        margin: auto;
+    }
+
+    #btn_enviar{
+        margin-top: 5px;
+        font-size: 15px;
+        margin-left: -5%;
+    }
+
+    .datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(233,246,255,1) 100%);
+        margin: auto;
+        margin-top: -55px;
+    }
+
+    .datos article{
+        color: var(--negro);
+        padding: 30px 40px;
+        width: 80%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mapa{
+        margin-top: -20%;
     }
 }
