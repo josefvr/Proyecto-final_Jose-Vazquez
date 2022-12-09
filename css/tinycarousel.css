@@ -8,13 +8,13 @@
 }
 
 #slider1 .viewport {
-    height: 125px;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
 
 #slider1 .buttons {
-    background: #C01313;
+    background: var(--aguamarina-fuerte);
     border-radius: 35px;
     display: block;
     position: absolute;
@@ -37,7 +37,7 @@
 }
 
 #slider1 .buttons:hover {
-    color: #C01313;
+    color: var(--aguamarina);
     background: #fff;
 }
 
@@ -53,13 +53,19 @@
     width: 240px;
     left: 0;
     top: 0;
+    text-align: center;
 }
 
 #slider1 .overview li {
     float: left;
     margin: 0 20px 0 0;
     padding: 1px;
-    height: 121px;
-    border: 1px solid #dcdcdc;
-    width: 236px;
- }
+    height: 300px;
+    width: 350px;
+}
+
+.viewport li img {
+    border-radius: 90px;
+    width: 20%;
+    margin-bottom: 30px;
+}

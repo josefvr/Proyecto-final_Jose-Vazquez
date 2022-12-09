@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +11,7 @@
     <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
     <script src="js/wow.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="jquery.tinycarousel.js"></script>
     <script src="js/funciones.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +33,13 @@
             });
         });
     </script>
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#slider1').tinycarousel();
+		});
+	</script>
 </head>
-
 <body>
     <script>
         new WOW().init();
@@ -79,40 +84,89 @@
         </div>
     </section>
     <section id="commercial">
-        <div class="fondo">
+        <div class="fondo3">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M-0.27,24.17 C130.07,7.41 250.27,56.73 501.41,17.27 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #E9F6FF;">
                 </path>
             </svg>
             <div>
-                <h1 class="title9">COMMERCIAL & RESIDENCIAL</h1>
-                <h2 class="title10">Our Cleaning Services</h2>
-            </div>
-        </div>
-    </section>
-    <section class="video">
-        <h1>Conoce de nuestros servicios</h1>
-        <div id="contenedorvideo">
-            <iframe src="https://www.youtube.com/embed/-KR82M3Czuk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-    <section id="comentarios">
-        <div class="fondo">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M-0.27,24.17 C130.07,7.41 250.27,56.73 501.41,17.27 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ECF9F7;">
-                </path>
-            </svg>
-            <div>
-                <h1 class="title11">WHAT CLIENT SAY’S</h1>
-                <h2 class="title12">Client’s Feedback</h2>
+                <h1 class="wow animate__animated animate__backInDown title9">COMMERCIAL & RESIDENCIAL</h1>
+                <h2 class="wow animate__animated animate__backInDown title10">Our Cleaning Services</h2>
                 <div class="servicios2">
+                    <article class="wow animate__animated animate__backInDown">
+                        <a href="#">
+                            <i class="fa-solid fa-soap icono3"></i>
+                            <h1>Commercial Cleaning</h1>
+                            <i class="fa-solid fa-arrow-right flecha"></i>
+                        </a>
+                    </article>
+                    <article class="wow animate__animated animate__backInDown">
+                        <a href="#">
+                            <i class="fa-solid fa-house-chimney icono3"></i>
+                            <h1>Move In/ Move Out Cleaning</h1>
+                            <i class="fa-solid fa-arrow-right flecha"></i>
+                        </a>
+                    </article>
+                    <article class="wow animate__animated animate__backInDown">
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-house icono3"></i>
+                            <h1>Residental Cleaning</h1>
+                            <i class="fa-solid fa-arrow-right flecha"></i>
+                        </a>
+                    </article>
                     <article>
-                        
+                        <a href="#">
+                            <i class="fa-solid fa-building icono3"></i>
+                            <h1>Apartment Cleaning</h1>
+                            <i class="fa-solid fa-arrow-right flecha"></i>
+                        </a>
                     </article>
                 </div>
             </div>
         </div>
     </section>
+    <section class="video">
+        <h1>Conoce de nuestros servicios</h1>
+        <br>
+        <div id="contenedorvideo">
+            <iframe src="https://www.youtube.com/embed/-KR82M3Czuk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- <section id="comentarios">
+        <div class="fondo">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-0.27,24.17 C130.07,7.41 250.27,56.73 501.41,17.27 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ECF9F7;">
+                </path>
+            </svg>
+            <div class="comments">
+                <h1 class="title11">WHAT CLIENT SAY’S</h1>
+                <h2 class="title12">Client’s Feedback</h2>
+                <div id="slider1">
+                    <a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
+                    <div class="viewport">
+                        <ul class="overview">
+                            <li>
+                                <img src="img/people1.jpg" />
+                                <i class="fa-solid fa-comment"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci quaerat veniam! Velit non sit eos. Expedita harum amet tempora qui quibusdam, quo quos minima beatae corrupti dolore at minus?</p>
+                            </li>
+                            <li>
+                                <img src="img/people2.jpg" />
+                                <i class="fa-solid fa-comment"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci quaerat veniam! Velit non sit eos. Expedita harum amet tempora qui quibusdam, quo quos minima beatae corrupti dolore at minus?</p>
+                            </li>
+                            <li>
+                                <img src="img/people3.jpg" />
+                                <i class="fa-solid fa-comment"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci quaerat veniam! Velit non sit eos. Expedita harum amet tempora qui quibusdam, quo quos minima beatae corrupti dolore at minus?</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <footer>
         <div class="info_logo">
             <figure>

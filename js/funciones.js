@@ -1,7 +1,3 @@
-// $("#menu").click(function () {
-//   $("#contenedormenu").slideToggle();
-// });
-
 // Funcion para el menu responsive
 $("#menu").click(function () {
   $("#contenedormenu").toggleClass("abrirmenu");

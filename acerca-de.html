@@ -231,38 +231,6 @@
             </p>
         </div>
     </footer>
-    <section id="formulario" class="fondomodal">
-        <div class="contenidomodal">
-            <div class="estructuramodal">
-                <i id="cerrarbtn" class="cerrar modal fas fa-times-circle wow animate__animated animate__rotateIn"></i>
-            </div>
-            <figure>
-                <img src="img/coca-cola-navidad.jpg" alt="">
-            </figure>
-        </div>
-    </section>
-    <script>
-        var fondomodal = document.getElementById("formulario");
-        var btn_cotizar = document.getElementById("cotizar");
-        var cerrar = document.getElementById("cerrarbtn");
-
-        function tiempo() {
-            fondomodal.style.display = "block";
-        }
-        // setTimeout(tiempo, 2000);
-
-        btn_cotizar.onclick = function () {
-            fondomodal.style.display = "block";
-        };
-        cerrar.onclick = function () {
-            fondomodal.style.display = "none";
-        };
-        window.onclick = function (event) {
-            if (event.target == fondomodal) {
-                fondomodal.style.display = "none";
-            }
-        };
-    </script>
     <section id="modal" class="fondomodal">
         <div class="contenidomodal">
             <div class="estructuramodal">
